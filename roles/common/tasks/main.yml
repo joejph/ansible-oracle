@@ -18,11 +18,11 @@
 #    tags:
 #     - keys
 
-  - name: Install EPEL Repo
-    yum: name={{ epel_rpm }} state=installed
-    when: configure_epel_repo and ansible_os_family == 'RedHat'
-    tags:
-     - epelrepo
+#  - name: Install EPEL Repo
+#    yum: name={{ epel_rpm }} state=installed
+#    when: configure_epel_repo and ansible_os_family == 'RedHat'
+#    tags:
+#     - epelrepo
 
   # Do not use the old public-yum.repo on OL7 after January 2019 anymore
   # Check for /usr/bin/ol_yum_configure.sh in newer systems
